@@ -62,13 +62,20 @@ header {
     color: #212121;
 }
 
-.nav-list .link1{
+.nav-list{
     color: #2196F3;
 }
 
+.link:hover{
+    color: #2196F3;
+}
 .contact-list {
     display: flex;
     gap: 50px;
+}
+
+.contact-list a:hover {
+    color: #006fca;
 }
 
 .contact-list a {
@@ -76,7 +83,7 @@ header {
 }
 
 .hero {
-    background-color: #2F303A;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 40)), url(images/Шапка.png);
     padding: 200px 0;
     text-align: center;
 }
@@ -101,6 +108,10 @@ header {
     border: none;
     width: 216px;
     height: 50px;
+}
+
+.hero-button:hover {
+    background-color: #006fca;
 }
 
 .section {
@@ -159,6 +170,10 @@ header {
     margin: 30px 0 10px;
 }
 
+.team-content img{
+    margin: 10px;
+}
+
 .team-item p {
     color: #757575;
 }
@@ -185,12 +200,13 @@ header {
 }
 .work-text {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #2F303ACC;
+    top: 210px;
+    width: 370px;
+    height: 70px;
+    background-color: #2f303ac9;
     color: #FFFFFF;
     text-align: center;
-    padding: 30px;
+    padding: 27px;
     font-weight: 700;
     font-size: 14px;
 }
@@ -221,6 +237,11 @@ header {
 .clients-link:focus {
     border-color: #2196f3;
     color: #2196f3;
+    fill: #006fca;
+}
+
+.svgs{
+    fill: #006fca;
 }
 
 .clients-logo {
