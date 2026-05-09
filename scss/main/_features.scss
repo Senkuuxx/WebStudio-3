@@ -1,0 +1,24 @@
+.features {
+  padding: 94px 0;
+
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &-item {
+    flex-basis: calc((100% - 90px) / 4);
+
+    h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.71;
+      color: $secondary-text-color;
+    }
+  }
+}

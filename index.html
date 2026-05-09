@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>WebStudio - Головна</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -10,14 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="images/">
+    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="stylesheet" href="css/styles.css">
     
 </head>
 <body>
 
     <header class="header">
-        <div class="container header-container">
+        <div class="container">
+        <div class="header-container">
             <nav class="nav">
                 <a href="/" class="logo">WebStudio</a>
                 <ul class="nav-list">
@@ -31,17 +32,18 @@
                 <li><a href="" class="nomber">+38 096 111 11 11</a></li>
             </ul>
         </div>
+        </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <p>ВАШОГО БІЗНЕСУ</p></h1>
+                <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                 <button type="button" class="hero-button">Замовити послугу</button>
             </div>
         </section>
 
-        <section class="section features">
+        <section class="features">
             <div class="container">
                 <ul class="features-list">
                     <li class="features-item">
@@ -68,7 +70,7 @@
             </div>
         </section>
 
-        <section class="section work">
+        <section class="work">
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="work-list">
@@ -90,7 +92,7 @@
             </div>
         </section>
 
-        <section class="section team">
+        <section class="team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
@@ -142,7 +144,7 @@
             </div>
         </section>
         <section>
-            <section class="clients section">
+            <section class="clients">
   <div class="container">
     <h2 class="section-title">Постійні клієнти</h2>
     <ul class="clients-list">
@@ -194,6 +196,5 @@
             </address>
         </div>
     </footer>
-
 </body>
 </html>

@@ -1,0 +1,40 @@
+.footer {
+  background-color: $bg-dark-color;
+  padding: 60px 0;
+
+  .logo-footer {
+    color: $white-color;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 20px;
+    display: block;
+
+    .accent {
+      color: $primary-color;
+    }
+  }
+}
+
+.address {
+  font-style: normal;
+
+  &-list {
+    .item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+
+    .map-link {
+      color: $white-color;
+    }
+
+    .contact-link {
+      color: rgba(255, 255, 255, 0.6);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover, &:focus {
+        color: $primary-color;
+      }
+    }
+  }
+}
