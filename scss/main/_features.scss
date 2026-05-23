@@ -1,13 +1,14 @@
 .features {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &-list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
   }
 
   &-item {
-    flex-basis: calc((100% - 90px) / 4);
+    text-align: center;
 
     h3 {
       font-size: 14px;
@@ -20,5 +21,28 @@
       line-height: 1.71;
       color: $secondary-text-color;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 94px 0;
+  }
+
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 30px) / 2);
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-item {
+    flex-basis: calc((100% - 90px) / 4);
   }
 }

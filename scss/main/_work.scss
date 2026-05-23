@@ -1,8 +1,9 @@
 .work {
-  padding-bottom: 94px;
+  padding: 60px 0;
 
   &-list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
   }
 
@@ -23,5 +24,27 @@
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work {
+    padding-bottom: 94px;
+  }
+
+  .work-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .work-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }

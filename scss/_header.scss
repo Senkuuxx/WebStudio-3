@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid $border-color;
-  padding: 24px 0;
+  padding: 16px 0;
 
   &-container {
     display: flex;
@@ -18,12 +18,11 @@
     font-weight: 700;
     font-size: 26px;
     color: $primary-color;
-    margin-right: 93px;
     pointer-events: none;
   }
 
   &-list {
-    display: flex;
+    display: none; 
     gap: 50px;
 
     .link {
@@ -40,8 +39,8 @@
 }
 
 .contact-list {
-  display: flex;
-  gap: 50px;
+  display: none; 
+  gap: 30px;
 
   a {
     color: $secondary-text-color;
@@ -50,5 +49,24 @@
     &:hover, &:focus {
       color: $accent-color;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 24px 0;
+  }
+
+  .nav-list,
+  .contact-list {
+    display: flex;
+  }
+
+  .nav .logo {
+    margin-right: 93px;
+  }
+
+  .contact-list {
+    gap: 50px;
   }
 }
